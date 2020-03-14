@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    text-align: center;
+    color: #444;
+    letter-spacing: .1em;
+    line-height: 1.8em;
+}
+
+nav, footer {
+    text-align: left;
+    padding: 1% 4%;
+    background-color: lightgray;
+}
+
+.hamburger {
+    padding-top: .75em;
+    float: right;
+}
+
+header {
+    padding: 10%;
+}
+
+section {
+    min-height: 200px;
+    background-color: #bbb;
+}
+
+section:nth-child(even) {
+    background-color: #ddd;
+}
+
+h1{
+    margin-bottom: 5%;
+}
+
+.logo {
+    display: inline;
+    text-align: left;
+    max-height: 50px;
+    max-width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.hero-image {
+    margin: 10%;
+    min-height: 150px;
+    min-width: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.placeholder {
+    min-height: 250px;
+    min-width: 275px;
+    border: 1px solid black;
+    background-color: #fff;
+    margin: 2%;
+}
+
+.projects {
+    padding: 4% 5%;
+}
+
+.project-description {
+    /* padding: 1% 0; */
+    font-size: 1em;
+    letter-spacing: normal;
+}
+
+ul {
+    list-style: none;
+
+}
+
+.project-description-sub li:nth-child(n+2) {
+    display: inline;
+    margin: 1%;
+}
+
+.bio {
+    padding: 5%;
+}
+
+.bio-text {
+    margin: 1em 1em 0;
+}
+
+.work-together {
+    padding: 8%;
+}
+
+.nav {
+    min-height: 0; 
+    display: none;
+}
+
+.bottom-nav {
+    text-align: center;
+    display: inline;
+    min-height: 0;
+}
+
+.bottom-nav li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 1em;
+}
+
+.contact-button {
+    padding: 1em 3em;
+    margin: 0 auto 3em;
+    background-color: #fff;
+}
+
+@media only screen and (min-width: 550px) {
+
+    .top-nav {
+        display: inline;
+    }
+
+    .top-nav ul {
+        float: right;
+        padding-top: .75em;
+        /* position: absolute;
+        top: 1.5em;
+        right: 5px; */
+
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .top-nav li {
+        display: inline;
+        margin: 0 1em;
+    }
+
+    .placeholder {
+        margin: 3% auto;
+        height: 350px;
+        max-width: 500px;
+    }
+
+    .bottom-nav {
+        text-align: left;
+    }
+
+    .bottom-nav li {
+        margin: 0 2em;
+    }
+
+}
