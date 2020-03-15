@@ -6,16 +6,36 @@
 }
 
 body {
+    font-family: 'Karla', sans-serif;
+    /* font-family: 'Rubik', sans-serif; */
     text-align: center;
-    color: #444;
+    /* color: #373c4b; */
+    color: #131416;
     letter-spacing: .1em;
     line-height: 1.8em;
+}
+
+span {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2em;
+}
+
+.italics {
+    font-style: italic;
+}
+
+nav {
+    border-bottom: 1px solid #131416;
+}
+
+footer {
+    border-top: 1px solid #131416;
 }
 
 nav, footer {
     text-align: left;
     padding: 1% 4%;
-    background-color: lightgray;
+    background-color: #f1f2f8;
 }
 
 .hamburger {
@@ -24,16 +44,18 @@ nav, footer {
 }
 
 header {
+    line-height: 2.5em;
     padding: 10%;
+    background-color: #f1f2f8;
 }
 
 section {
     min-height: 200px;
-    background-color: #bbb;
+    background-color: #f1f2f8;
 }
 
 section:nth-child(even) {
-    background-color: #ddd;
+    background-color: #f1f2f8;
 }
 
 h1{
@@ -92,10 +114,11 @@ ul {
 
 .bio-text {
     margin: 1em 1em 0;
+    line-height: 1.5em;
 }
 
 .work-together {
-    padding: 8%;
+    padding: 7%;
 }
 
 .nav {
@@ -110,15 +133,19 @@ ul {
 }
 
 .bottom-nav li {
+    font-family: 'Work Sans', sans-serif;
     display: inline-block;
     padding: 0;
     margin: 0 1em;
 }
 
 .contact-button {
-    padding: 1em 3em;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
+    padding: 1em 2em;
     margin: 0 auto 3em;
-    background-color: #fff;
+    background-color: #f1f2f8;
+    border: 1px solid black;
 }
 
 @media only screen and (min-width: 550px) {
@@ -141,6 +168,7 @@ ul {
     }
 
     .top-nav li {
+        font-family: 'Work Sans', sans-serif;
         display: inline;
         margin: 0 1em;
     }
