@@ -40,31 +40,32 @@ function renderProjectSection(projectIndex) {
 
 function populateProjects() {
 
-    for (let index = 0; index <= STORE.length; index++) {
+    for (let index = 0; index < STORE.length; index++) {
         $('.projects').append(renderProjectSection(index));
     }
 
     return $('.projects');
 }
 
-// function autoScroll() {
-//     $('.top-links').on('click', 'li', function (event) {
-//         event.preventDefault();
-//         const jumpTo = $(this).find('a').attr('href');
-//     });
-// }
-
 function expandMenu() {
-    $('nav').on('click', 'i', function(event) {
-        $(this).addClass('.hideMe');
-        console.log(event);
+    $('.hamburger').on('click', function(event) {
+        $('.top-nav').toggle('fast');
+    });
+}
+
+function emailMe() {
+    $('.contact-button').on('click', function(event) {
+        const email = 's.steven.reyes+portfolio@gmail.com';
+        const subject = 'I\'ve Got An Idea!';
+        const emailBody = 'Hey Sergio,';
+        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody;;
     });
 }
 
 function runIt() {
     populateProjects();
-    autoScroll();
     expandMenu();
+    emailMe();
 }
 
 $(runIt);
