@@ -7,23 +7,32 @@
     <!-- <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"> -->
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Karla|Rubik:400,400i|Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://kit.fontawesome.com/d650fa455b.js" crossorigin="anonymous"></script>
     <title>SSR's Portfolio</title>
 </head>
 <body>
     <nav role="navigation">
-        <img class="icon logo" src="" alt="SSR">
-        <a title="menu" href="#" class="icon hamburger">Burger</a>
+        <svg width="50" height="50">
+            <circle cx="25" cy="25" r="25" fill="#ffffff" />
+            <text x="50%" y="50%" text-anchor="middle" fill="#131416" font-size="18px" font-family="Rubik" dy=".3em">SSR</text>
+            Sorry, your browser does not support inline SVG.
+        </svg>
+        <!-- <img class="icon logo" src="" alt="SSR"> -->
+        <a aria-label="menu" href="#" class="hamburger">
+            <i aria-hidden="true" class="fas fa-bars" title="menu button"></i>
+        </a>
         <section class="top-nav nav">
-            <ul>
-                <li>1</li>
-                <li>2</li>
+            <ul class='top-links'>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#email">Contact</a></li>
             </ul>
         </section>
     </nav>
     <main role="main">
         <header class="hero" role="banner">
-            <h1>Hello, my name is <span>Sergio</span>, and I’m a <span class="italics">creative</span></h1>
-            <img class="hero-image" src="" alt="A picture of SSR">
+            <h1 class="animated fadeInUp">Hello, my name is <span>Sergio</span>, and I’m a <span class="italics">creative</span></h1>
+            <img class="hero-image animated fadeInUp" src="images/me.jpg" alt="A picture of SSR">
         </header>
         <section class="bio">
             <h2 class="bio-text">Hobbyist musician, clothier by trade, aspiring web developer—Opportunities
@@ -33,9 +42,9 @@
                  for a modern, digital world. These are my works, in progress.</h2>
             <img src="" alt=""> 
         </section>
-        <section class="projects">
-            <div class="container">
-                <div class="placeholder">
+        <section class="projects" id="projects">
+            <!-- <div class="container">
+                <div class="placeholder"> 
                     <div class="project-thumbnail">
                         <img src="" alt="A screengrab of Ed Reed Quiz">
                     </div>
@@ -71,23 +80,47 @@
                 <h3 class="project-description">
                     Project description
                 </h3>
-            </div>
+            </div> -->
         </section>
         <section class="lets-work">
             <h3 class="work-together">Interested in making something together?</h3>
-            <button type="submit" class="contact-button">Get @ Me</button>
+            <button type="button" id="email" class="button contact-button">Get @ Me</button>
         </section>
     </main>
     <footer role="contact-links">
         <section class="bottom-nav nav">
             <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
+                <li>
+                    <a aria-label="github" href="https://github.com/StevieReyJuan/">
+                        <i aria-hidden="true" class="fab fa-github" title="github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="linkedin" href="https://www.linkedin.com/">
+                        <i aria-hidden="true" class="fab fa-linkedin" title="linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="twitter" href="https://twitter.com/">
+                        <i aria-hidden="true" class="fab fa-twitter" title="twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="instagram" href="https://www.instagram.com/">
+                        <i aria-hidden="true" class="fab fa-instagram-square" title="instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a aria-label="email" href="mailto:s.steven.reyes+portfolio@gmail.com">
+                        <i aria-hidden="true" class="fas fa-at" title="email"></i>
+                    </a>
+                </li>
             </ul>
         </section>    
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
