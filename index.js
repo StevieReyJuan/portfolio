@@ -1,35 +1,44 @@
 const STORE = [
     {
-        thumbnail: 'images/edreedquiz.png',
-        alt: 'A screengrab of Ed Reed Quiz',
-        description: 'A Quiz app to test the user’s knowledge of the greatest free-safety of all time, Ed Reed. \
-        App provides visual feedback for user score and end results.',
-        details: ['Technologies Used: HTML, CSS, Javascript (Library: JQuery)', 
-        '<a href="https://steviereyjuan.github.io/EdReedQuiz/">Live</a>', 
-        '<a href="https://github.com/StevieReyJuan/EdReedQuiz">Github Repo</a>']
+        thumbnail: 'images/tasktriagescreen.png',
+        alt: 'A screenshot of Task Triage\'s tasks page',
+        description: '<span>Task Triage</span> is a task management/organization app with an emphasis on prioritizing tasks by their "status"/level of urgency. Task Triage\'s general theme and color-story draws inspiration from a medical triage and its tagging system. Task Triage allows users to share tasks with "teams" for collaboration, with access to any tasks that a user is a teammate of. Use Task Triage for personal or shared accountability and get things done!',
+        details: ['Technologies Used: Javascript, HTML, CSS, React (Hooks, Router), Node, Express, JWT, UUID, Jest, Supertest, Mocha, Chai, PostgreSQL, Knex', 
+        '<a href="https://task-triage-client.vercel.app/">Live</a>', 
+        '<a href="https://github.com/StevieReyJuan/Task-Triage-Client">Client Repo</a>',
+        '<a href="https://github.com/StevieReyJuan/Task-Triage-Server">API Repo</a>']
     },
-    // {
-    //     thumbnail: 'test',
-    //     alt: 'test',
-    //     description: 'test',
-    //     details: ['test', 'test', 'test']
-    // }
+    {
+        thumbnail: 'images/shirtspecscreen.png',
+        alt: 'A screenshot of ShirtSpec\'s measurement page',
+        description: '<span>ShirtSpec</span> is a measurement companion app for Individualized Shirts retail partners. Designed specifically with new trainees in mind, ShirtSpec guides fitters through the custom shirt fitting process ensuring that they accurately record key values within the scope of the nation\'s most comprehensive custom shirt program.',
+        details: ['Technologies Used: Javascript, HTML, CSS, React (Hooks, Router), Node, Express, JWT, Jest, Supertest, Mocha, Chai, PostgreSQL, Knex', 
+        '<a href="https://shirtspec-app.vercel.app/">Live</a>', 
+        '<a href="https://github.com/StevieReyJuan/ShirtSpec">Client Repo</a>',
+        '<a href="https://github.com/StevieReyJuan/shirtspec-api">API Repo</a>']
+    },
+    {
+        thumbnail: 'images/brewhopscreen.png',
+        alt: 'A screenshot of BrewHop\'s results page',
+        description: 'My first project for Thinkful\'s Software Engineering program: <span>BrewHop</span> is a tool to find breweries within walking distance of a user for a fun, safe afternoon of brewery hopping.',
+        details: ['Technologies Used: Javascript (JQuery), HTML, CSS, Google Maps Geocode API, Google Maps Javascript API, Google Maps JS API Places & Distance Matrix libraries ', 
+        '<a href="https://steviereyjuan.github.io/BrewHop/">Live</a>', 
+        '<a href="https://github.com/StevieReyJuan/BrewHop">Client Repo</a>']
+    }
 ]
 
 function renderProjectSection(projectIndex) {
-    let projectHTML = 
-    $(`<div class="container">
-        <div>
-            <img class="project-thumbnail" src="${STORE[projectIndex].thumbnail}" alt="${STORE[projectIndex].alt}">
-        </div>
-    </div>
-    <h3 class="project-description">${STORE[projectIndex].description}</h3>
-    <div class="project-description-sub">
-        <ul>
-        </ul>
-    </div>`)
+    const projectHTML = 
+        $(`<div class="project-container">
+                <img class="project-thumbnail" src="${STORE[projectIndex].thumbnail}" alt="${STORE[projectIndex].alt}">
+                <h3 class="project-description">${STORE[projectIndex].description}</h3>
+                <div class="project-description-sub">
+                    <ul>
+                    </ul>
+                </div>
+            </div>`);
     
-    let findUl = $(projectHTML).find('ul')
+    const findUl = $(projectHTML).find('ul')
 
     STORE[projectIndex].details.forEach(function(liValue) {
         $(`<li>${liValue}</li>`).appendTo(findUl);
@@ -47,24 +56,17 @@ function populateProjects() {
     return $('.projects');
 }
 
-function expandMenu() {
-    $('.hamburger').on('click', function(event) {
-        $('.top-nav').toggle('fast');
-    });
-}
-
 function emailMe() {
     $('.contact-button').on('click', function(event) {
         const email = 's.steven.reyes+portfolio@gmail.com';
         const subject = 'I\'ve Got An Idea!';
         const emailBody = 'Hey Sergio,';
-        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody;;
+        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody;
     });
 }
 
 function runIt() {
     populateProjects();
-    expandMenu();
     emailMe();
 }
 

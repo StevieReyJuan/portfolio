@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"> -->
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Karla|Rubik:400,400i|Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
     <script src="https://kit.fontawesome.com/d650fa455b.js" crossorigin="anonymous"></script>
     <title>SSR's Portfolio</title>
 </head>
@@ -15,13 +18,9 @@
     <nav role="navigation">
         <svg width="50" height="50">
             <circle cx="25" cy="25" r="25" fill="#ffffff" />
-            <text x="50%" y="50%" text-anchor="middle" fill="#131416" font-size="18px" font-family="Rubik" dy=".3em">SSR</text>
+            <text x="50%" y="50%" text-anchor="middle" fill="#141c3a" font-size="18px" font-family="Rubik" dy=".3em">SSR</text>
             Sorry, your browser does not support inline SVG.
         </svg>
-        <!-- <img class="icon logo" src="" alt="SSR"> -->
-        <a aria-label="menu" href="#" class="hamburger">
-            <i aria-hidden="true" class="fas fa-bars" title="menu button"></i>
-        </a>
         <section class="top-nav nav">
             <ul class='top-links'>
                 <li><a href="#projects">Projects</a></li>
@@ -32,7 +31,7 @@
     <main role="main">
         <header class="hero" role="banner">
             <h1 class="animated fadeInUp">Hello, my name is <span>Sergio</span>, and I’m a <span class="italics">creative</span></h1>
-            <img class="hero-image animated fadeInUp" src="images/me.jpg" alt="A picture of SSR">
+            <img class="hero-image animated fadeInUp" src="images/me.jpeg" alt="A picture of SSR">
         </header>
         <section class="bio">
             <h2 class="bio-text">Hobbyist musician, clothier by trade, aspiring web developer—Opportunities
@@ -40,48 +39,11 @@
                  and signature on it is what fulfills and motivates me, no matter the medium. I hope 
                  to take my latest learned skill set of coding to continue to create more accessibly 
                  for a modern, digital world. These are my works, in progress.</h2>
-            <img src="" alt=""> 
         </section>
+
         <section class="projects" id="projects">
-            <!-- <div class="container">
-                <div class="placeholder"> 
-                    <div class="project-thumbnail">
-                        <img src="" alt="A screengrab of Ed Reed Quiz">
-                    </div>
-                </div>
-                <h3 class="project-description">
-                        A Quiz app to test the user’s knowledge of the greatest free-safety of all time, Ed Reed. 
-                        App provides visual feedback for user score and end results.
-                </h3>
-                <div class="project-description-sub">
-                    <ul>
-                        <li>Technologies Used: HTML, CSS, Javascript (Library: JQuery)</li>
-                        <li><a href="https://steviereyjuan.github.io/EdReedQuiz/">Live</a></li>
-                        <li><a href="https://github.com/StevieReyJuan/EdReedQuiz">Github Repo</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="container">
-                <div class="placeholder">
-                    <div class="project-thumbnail">
-                        <img src="" alt="Project 2">
-                    </div>
-                </div>
-                <h3 class="project-description">
-                    Project description
-                </h3>
-            </div>
-            <div class="container">
-                <div class="placeholder">
-                    <div class="project-thumbnail">
-                        <img src="" alt="Project 3">
-                    </div>
-                </div>
-                <h3 class="project-description">
-                    Project description
-                </h3>
-            </div> -->
         </section>
+
         <section class="lets-work">
             <h3 class="work-together">Interested in making something together?</h3>
             <button type="button" id="email" class="button contact-button">Get @ Me</button>
@@ -89,30 +51,30 @@
     </main>
     <footer role="contact-links">
         <section class="bottom-nav nav">
-            <ul>
+            <ul class="fa-icons">
                 <li>
-                    <a aria-label="github" href="https://github.com/StevieReyJuan/">
-                        <i aria-hidden="true" class="fab fa-github" title="github"></i>
+                    <a aria-label="github" target="_blank" href="https://github.com/StevieReyJuan/">
+                        <i aria-hidden="true" class="fab fa-github fa-color" title="github"></i>
                     </a>
                 </li>
                 <li>
-                    <a aria-label="linkedin" href="https://www.linkedin.com/">
-                        <i aria-hidden="true" class="fab fa-linkedin" title="linkedin"></i>
+                    <a aria-label="linkedin" target="_blank" href="https://www.linkedin.com/">
+                        <i aria-hidden="true" class="fab fa-linkedin fa-color" title="linkedin"></i>
                     </a>
                 </li>
                 <li>
-                    <a aria-label="twitter" href="https://twitter.com/">
-                        <i aria-hidden="true" class="fab fa-twitter" title="twitter"></i>
+                    <a aria-label="twitter" target="_blank" href="https://twitter.com/">
+                        <i aria-hidden="true" class="fab fa-twitter fa-color" title="twitter"></i>
                     </a>
                 </li>
                 <li>
-                    <a aria-label="instagram" href="https://www.instagram.com/">
-                        <i aria-hidden="true" class="fab fa-instagram-square" title="instagram"></i>
+                    <a aria-label="instagram" target="_blank" href="https://www.instagram.com/">
+                        <i aria-hidden="true" class="fab fa-instagram-square fa-color" title="instagram"></i>
                     </a>
                 </li>
                 <li>
-                    <a aria-label="email" href="mailto:s.steven.reyes+portfolio@gmail.com">
-                        <i aria-hidden="true" class="fas fa-at" title="email"></i>
+                    <a aria-label="email" target="_blank" href="mailto:s.steven.reyes+portfolio@gmail.com">
+                        <i aria-hidden="true" class="fas fa-at fa-color" title="email"></i>
                     </a>
                 </li>
             </ul>
