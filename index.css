@@ -153,10 +153,6 @@ ul {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
 }
 
-.contact-button {
-    cursor: pointer;
-}
-
 .work-together {
     padding: 0 2%;
 }
@@ -215,6 +211,7 @@ ul {
     background-color: #141c3a;
     border: 2px solid #55198b;
     border-radius: 290486px;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 550px) {
