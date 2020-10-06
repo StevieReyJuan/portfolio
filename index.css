@@ -73,13 +73,12 @@ section {
     min-height: 200px;
 }
 
-h1{
+.hero-tagline {
     margin-bottom: 5%;
 }
 
 .hero-image {
     margin: 10%;
-    max-height: 200x;
     max-width: 200px;
     border-radius: 50%;
 }
@@ -257,6 +256,15 @@ ul {
     .project-thumbnail {
         margin: 3%;
         max-width: 700px;
+    }
+
+    header {
+        padding-top: 5%;
+    }
+
+    .hero-image {
+        margin-top: 5%;
+        max-width: 250px;
     }
 
 }
