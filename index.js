@@ -1,5 +1,12 @@
 const STORE = [
     {
+        thumbnail: 'images/shop.drinkwaterscambridge.com.png',
+        alt: 'A screenshot of Drinkwater\'s e-commerce website',
+        description: '"Necessity is the mother of invention", and though an eCommerce site is by no means innovative in and of itself, the COVID-19 pandemic forced our small team at Drinkwater\'s to adapt in the 11th hour to the challenge of shuttering our doors for an extended shelter-in-place order. A (reluctant) first in the archetypal brick and mortar\'s 16 year history, I led the project on all technical and integrative fronts, with the added bonus of getting to practice some product photography and editing in Adobe Creative Suite. I continue to manage <span>Shop.DrinkwatersCambridge.com</span>, still in its earliest iteration due to its unexpected execution and <em>substantial</em> workload.',
+        details: ['Technologies Used: HTML, CSS, Javascript, Lightspeed API, Adobe Creative Suite, PHP (Twig)', 
+        '<a href="https://shop.drinkwaterscambridge.com/" target="_blank">Shop</a>',]
+    },
+    {
         thumbnail: 'images/tasktriagescreen.png',
         alt: 'A screenshot of Task Triage\'s tasks page',
         description: '<span>Task Triage</span> is a task management/organization app with an emphasis on prioritizing tasks by their "status"/level of urgency. Task Triage\'s general theme and color-story draws inspiration from a medical triage and its tagging system. Task Triage allows users to share tasks with "teams" for collaboration, with access to any tasks that a user is a teammate of. Use Task Triage for personal or shared accountability and get things done!',
@@ -20,7 +27,7 @@ const STORE = [
     {
         thumbnail: 'images/brewhopscreen.png',
         alt: 'A screenshot of BrewHop\'s results page',
-        description: 'My first project for Thinkful\'s Software Engineering program: <span>BrewHop</span> is a tool to find breweries within walking distance of a user for a fun, safe afternoon of brewery hopping.',
+        description: 'My first rudimentary project for Thinkful\'s Software Engineering program, included here for sentimental reasons: <span>BrewHop</span> is a tool to find breweries within walking distance of a user for a fun, safe afternoon of brewery hopping.',
         details: ['Technologies Used: Javascript (JQuery), HTML, CSS, Google Maps Geocode API, Google Maps Javascript API, Google Maps JS API Places & Distance Matrix libraries ', 
         '<a href="https://steviereyjuan.github.io/BrewHop/" target="_blank">Live</a>', 
         '<a href="https://github.com/StevieReyJuan/BrewHop" target="_blank">Client Repo</a>']
@@ -49,8 +56,8 @@ function renderProjectSection(projectIndex) {
 
 function populateProjects() {
 
-    for (let index = 0; index < STORE.length; index++) {
-        $('.projects').append(renderProjectSection(index));
+    for (let i = 0; i < STORE.length; i++) {
+        $('.projects').append(renderProjectSection(i));
     }
 
     return $('.projects');
