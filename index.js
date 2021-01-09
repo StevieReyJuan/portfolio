@@ -27,7 +27,7 @@ const STORE = [
     {
         thumbnail: 'images/brewhopscreen.png',
         alt: 'A screenshot of BrewHop\'s results page',
-        description: 'My first rudimentary project for Thinkful\'s Software Engineering program, included here for sentimental reasons: <span>BrewHop</span> is a tool to find breweries within walking distance of a user for a fun, safe afternoon of brewery hopping.',
+        description: 'My first project for Thinkful\'s Software Engineering program: <span>BrewHop</span> is a tool to find breweries within walking distance of a user for a fun, safe afternoon of brewery hopping.',
         details: ['Technologies Used: Javascript (JQuery), HTML, CSS, Google Maps Geocode API, Google Maps Javascript API, Google Maps JS API Places & Distance Matrix libraries ', 
         '<a href="https://steviereyjuan.github.io/BrewHop/" target="_blank">Live</a>', 
         '<a href="https://github.com/StevieReyJuan/BrewHop" target="_blank">Client Repo</a>']
